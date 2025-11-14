@@ -52,8 +52,8 @@ Follow these steps to get the project up and running on your local machine.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/clusterloggs
-cd your-repo-name
+git clone https://github.com/clusterloggs/rag_chatbot.git
+cd rag_chatbot
 ```
 
 ### 3. Set Up Environment
