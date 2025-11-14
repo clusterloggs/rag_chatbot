@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic<2
+langchain
+openai
+faiss-cpu
+tiktoken
+python-dotenv
+streamlit
+requests
