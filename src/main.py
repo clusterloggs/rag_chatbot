@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from openai import APIError
 from langchain.docstore.document import Document
  
-from schemas import IngestPayload, QueryPayload
-from rag_service import rag_service
+from .schemas import IngestPayload, QueryPayload
+from .rag_service import rag_service
 
 app = FastAPI(title="RAG Chatbot Service")
 

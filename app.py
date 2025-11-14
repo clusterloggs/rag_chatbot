@@ -4,8 +4,8 @@ import requests
 FASTAPI_URL = "http://localhost:8000"
 
 # UI Setup
-st.set_page_config(page_title="RAG Chatbot", layout="wide")
-st.title("RAG Chatbot")
+st.set_page_config(page_title="Insight Finder", layout="wide")
+st.title("Insight Finder")
 st.markdown("Interact with your RAG service. ingest your document(s), then ask questions.")
 
 # Health Check
@@ -23,9 +23,9 @@ except requests.exceptions.ConnectionError:
 
 
 # Ingestion Section
-st.header("1. Ingest Knowledge")
+st.header("Ingest Knowledge")
 with st.expander("Ingest new documents into the knowledge base"):
-    ingest_texts_input = st.text_area("Enter raw text to ingest (one document per line)", height=150)
+    ingest_texts_input = st.text_area("Enter raw text to ingest (one document per line)", height=100)
     uploaded_files = st.file_uploader(
         "Or upload documents directly",
         accept_multiple_files=True,
@@ -59,7 +59,7 @@ with st.expander("Ingest new documents into the knowledge base"):
                     st.error(f"An error occurred: {e}")
 
 # Querying Section
-st.header("2. Ask a Question")
+st.header("Ask a Question")
 query_text = st.text_input("Enter your question:", key="query_input")
 
 if st.button("Get Answer", key="get_answer_btn"):

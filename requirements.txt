@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 pydantic<2
 langchain
+langchain-community
 openai
 faiss-cpu
 tiktoken
