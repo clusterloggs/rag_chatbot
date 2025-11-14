@@ -58,7 +58,7 @@ with st.expander("Ingest new documents into the knowledge base"):
                 except Exception as e:
                     st.error(f"An error occurred: {e}")
 
-# --- Querying Section ---
+# Querying Section
 st.header("2. Ask a Question")
 query_text = st.text_input("Enter your question:", key="query_input")
 
